@@ -1,14 +1,123 @@
 <!DOCTYPE html>
-
 <html lang="id">
 
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Stickman Battle - SosioZone</title>
+<title>Stickman Battle Quiz - SOSIOZONE</title>
 
-<link rel="stylesheet" href="../style.css">
+<style>
+
+body{
+    margin:0;
+    background:#07101c;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+
+.container{
+
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 0;
+
+}
+
+
+.home a{
+
+    color:white;
+    text-decoration:none;
+    background:#24384f;
+    padding:10px 15px;
+    border-radius:10px;
+
+}
+
+
+.header{
+
+    text-align:center;
+    margin:30px 0;
+
+}
+
+
+.header h1{
+
+    color:#ffc857;
+    font-size:36px;
+
+}
+
+
+
+.grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:#13253a;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+}
+
+
+
+.card h2{
+
+    color:#ffc857;
+
+}
+
+
+.card p{
+
+    color:#c8d4e2;
+    line-height:1.6;
+
+}
+
+
+
+.button{
+
+    display:block;
+    text-align:center;
+    background:#148bea;
+    color:white;
+    padding:12px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:20px;
+
+}
+
+
+.coming{
+
+    background:#333;
+    color:#aaa;
+
+}
+
+
+
+</style>
 
 </head>
 
@@ -16,63 +125,103 @@
 <body>
 
 
-<header>
-
-<h1>⚔ Stickman Battle</h1>
-
-<p>Versi 0.1 - Pertarungan Sosiologi</p>
-
-</header>
-
-
-
-<nav>
-
-<a href="../index.html">🏠 Home</a>
-
-<a href="games.html">🎮 Games</a>
-
-</nav>
-
-
-
-
 <div class="container">
 
 
+<div class="home">
+
+<a href="games.html">
+⬅️ Kembali ke Game Center
+</a>
+
+</div>
+
+
+
+<div class="header">
+
+<h1>
+⚔️ Stickman Battle Quiz
+</h1>
+
+<p>
+Pilih tantangan Sosiologi yang ingin dimainkan
+</p>
+
+</div>
+
+
+
+<div class="grid">
+
+
+
+<!-- MATERI 1 -->
+
 <div class="card">
 
-<h2>🙂 PLAYER</h2>
+<h2>
+📘 Level 1
+</h2>
+
 
 <h3>
-❤️❤️❤️❤️❤️
+Masalah Sosial
 </h3>
 
 
-<div style="font-size:70px">
+<p>
 
-🧍
+Materi:
+
+<br>
+✓ Masalah Sosial
+
+<br>
+✓ Masalah Pribadi dan Sosial
+
+<br>
+✓ Masalah Lokal, Nasional, Global
+
+</p>
+
+
+<a class="button" href="#" target="_blank">
+
+🚀 MAIN SEKARANG
+
+</a>
+
 
 </div>
 
 
-</div>
 
 
-
+<!-- MATERI 2 -->
 
 <div class="card">
 
-<h2>🤖 COMPUTER</h2>
+<h2>
+📗 Level 2
+</h2>
+
 
 <h3>
-❤️❤️❤️❤️❤️
+COMING SOON
 </h3>
 
 
-<div style="font-size:70px">
+<p>
 
-🤖
+Materi dan game belum tersedia.
+
+</p>
+
+
+<div class="button coming">
+
+🔒 SEGERA HADIR
 
 </div>
 
@@ -81,18 +230,34 @@
 
 
 
+
+
+<!-- MATERI 3 -->
 
 <div class="card">
 
+<h2>
+📙 Level 3
+</h2>
 
-<h2>Battle</h2>
+
+<h3>
+COMING SOON
+</h3>
 
 
-<button>
+<p>
 
-⚔ ATTACK
+Materi dan game sedang disiapkan.
 
-</button>
+</p>
+
+
+<div class="button coming">
+
+🔒 SEGERA HADIR
+
+</div>
 
 
 </div>
@@ -102,14 +267,7 @@
 </div>
 
 
-
-
-<footer>
-
-SOSIOZONE | Stickman Battle
-
-</footer>
-
+</div>
 
 
 </body>
