@@ -338,7 +338,12 @@ margin-top:40px;
 
 padding:90px 8%;
 
-background:#ffffff;
+background:
+linear-gradient(
+135deg,
+#eff6ff,
+#ffffff
+);
 
 }
 
