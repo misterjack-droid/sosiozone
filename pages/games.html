@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Game Center - SosioZone</title>
+<title>Game Center - SOSIOZONE</title>
 
-<link rel="stylesheet" href="../style.css">
+<style>
+
+*{
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    margin:0;
+    background:#07101c;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 0;
+}
+
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.header h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#b8c7d9;
+}
+
+
+/* CARD GAME */
+
+.game-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+
+.game-card{
+
+    background:#13253a;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+}
+
+
+.game-image{
+
+    height:180px;
+    background:#24384f;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:60px;
+
+}
+
+
+
+.game-content{
+
+    padding:20px;
+
+}
+
+
+.game-content h2{
+
+    margin-top:0;
+    color:#ffc857;
+
+}
+
+
+
+.game-content p{
+
+    color:#c8d4e2;
+    line-height:1.6;
+
+}
+
+
+
+.tag{
+
+    display:inline-block;
+    background:#0d8be8;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:10px;
+
+}
+
+
+
+.button{
+
+    display:block;
+
+    text-align:center;
+
+    background:#148bea;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:13px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    margin-top:20px;
+
+}
+
+
+
+.button:hover{
+
+    background:#0c6fc0;
+
+}
+
+
+
+/* HOME BUTTON */
+
+.home{
+
+    margin-bottom:20px;
+
+}
+
+
+.home a{
+
+    color:white;
+    text-decoration:none;
+    background:#24384f;
+    padding:10px 15px;
+    border-radius:10px;
+
+}
+
+
+
+</style>
 
 </head>
 
@@ -14,52 +177,91 @@
 <body>
 
 
-<header>
+<div class="container">
 
-<h1>🎮 Game Center</h1>
+
+<div class="home">
+
+<a href="../index.html">
+🏠 Kembali ke Home
+</a>
+
+</div>
+
+
+
+<div class="header">
+
+<h1>
+🎮 GAME CENTER
+</h1>
 
 <p>
 Belajar Sosiologi melalui permainan interaktif
 </p>
 
-</header>
+</div>
 
 
 
-<nav>
 
-<a href="../index.html">🏠 Home</a>
 
-<a href="materi.html">📚 Materi</a>
-
-<a href="games.html">🎮 Games</a>
-
-<a href="quiz.html">📝 Quiz</a>
-
-<a href="aktivitas.html">🧩 Aktivitas</a>
-
-<a href="prestasi.html">🏆 Prestasi</a>
-
-</nav>
+<div class="game-grid">
 
 
 
-<div class="container">
+<!-- GAME 1 -->
+
+<div class="game-card">
 
 
-<div class="card">
+<div class="game-image">
 
-<h2>⚔️ Stickman Battle Quiz</h2>
+⚔️
+
+</div>
+
+
+
+<div class="game-content">
+
+
+<span class="tag">
+Sosiologi Kelas X
+</span>
+
+
+<h2>
+Stickman Battle Quiz
+</h2>
+
 
 <p>
-Kalahkan lawanmu dan jawab soal Sosiologi untuk mendapatkan kemenangan.
+
+Kalahkan musuh dengan menjawab tantangan Sosiologi.
+
+Setiap jawaban benar membantu kamu memenangkan pertandingan.
+
 </p>
 
-<a href="pilih-materi.html">
 
-<button>
-Mulai Bermain
-</button>
+<p>
+
+Materi:
+<br>
+✓ Masalah Sosial
+<br>
+✓ Masalah Pribadi dan Sosial
+<br>
+✓ Masalah Lokal, Nasional, Global
+
+</p>
+
+
+
+<a class="button" href="#" target="_blank">
+
+🚀 MAIN SEKARANG
 
 </a>
 
@@ -67,50 +269,122 @@ Mulai Bermain
 </div>
 
 
+</div>
 
-<div class="card">
 
-<h2>🕵 Social Detective</h2>
+
+
+
+
+
+<!-- GAME 2 -->
+
+<div class="game-card">
+
+
+<div class="game-image">
+
+🧠
+
+</div>
+
+
+
+<div class="game-content">
+
+
+<span class="tag">
+Quiz
+</span>
+
+
+<h2>
+Tantangan Konsep Sosiologi
+</h2>
+
 
 <p>
-Pecahkan kasus sosial berdasarkan konsep Sosiologi.
+
+Uji pemahaman konsep-konsep penting Sosiologi melalui permainan singkat.
+
 </p>
 
-<button>
-Segera Hadir
-</button>
+
+
+<a class="button" href="#" target="_blank">
+
+🚀 MULAI QUIZ
+
+</a>
+
+
+</div>
+
 
 </div>
 
 
 
-<div class="card">
 
-<h2>🎯 Quiz Challenge</h2>
+
+
+
+<!-- GAME 3 -->
+
+<div class="game-card">
+
+
+<div class="game-image">
+
+🏆
+
+</div>
+
+
+
+<div class="game-content">
+
+
+<span class="tag">
+Challenge
+</span>
+
+
+<h2>
+Sosiologi Challenge
+
+</h2>
+
 
 <p>
-Uji kemampuan Sosiologimu.
+
+Kumpulkan skor terbaik dan jadilah siswa dengan pencapaian tertinggi.
+
 </p>
 
-<button>
-Segera Hadir
-</button>
+
+
+<a class="button" href="#" target="_blank">
+
+🚀 MAIN
+
+</a>
+
+
+</div>
+
 
 </div>
 
 
 
+
 </div>
 
 
+</div>
 
-<footer>
-
-SOSIOZONE | Game Edukasi Sosiologi
-
-</footer>
 
 
 </body>
-
 </html>
