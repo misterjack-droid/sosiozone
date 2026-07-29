@@ -8,116 +8,7 @@
 
 <title>Stickman Battle Quiz - SOSIOZONE</title>
 
-<style>
-
-body{
-    margin:0;
-    background:#07101c;
-    color:white;
-    font-family:Arial,sans-serif;
-}
-
-
-.container{
-
-    width:90%;
-    max-width:1000px;
-    margin:auto;
-    padding:30px 0;
-
-}
-
-
-.home a{
-
-    color:white;
-    text-decoration:none;
-    background:#24384f;
-    padding:10px 15px;
-    border-radius:10px;
-
-}
-
-
-.header{
-
-    text-align:center;
-    margin:30px 0;
-
-}
-
-
-.header h1{
-
-    color:#ffc857;
-    font-size:36px;
-
-}
-
-
-
-.grid{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-
-}
-
-
-
-.card{
-
-    background:#13253a;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,.4);
-
-}
-
-
-
-.card h2{
-
-    color:#ffc857;
-
-}
-
-
-.card p{
-
-    color:#c8d4e2;
-    line-height:1.6;
-
-}
-
-
-
-.button{
-
-    display:block;
-    text-align:center;
-    background:#148bea;
-    color:white;
-    padding:12px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-top:20px;
-
-}
-
-
-.coming{
-
-    background:#333;
-    color:#aaa;
-
-}
-
-
-
-</style>
+<link rel="stylesheet" href="../prototype-home.css">
 
 </head>
 
@@ -125,44 +16,116 @@ body{
 <body>
 
 
-<div class="container">
+<!-- NAVBAR -->
 
+<header class="navbar">
 
-<div class="home">
+<div class="nav-container">
 
-<a href="games.html">
-⬅️ Kembali ke Game Center
-</a>
-
+<div class="logo">
+SOSIO<span>ZONE</span>
 </div>
 
 
+<nav>
 
-<div class="header">
+<a href="../prototype-home.html">
+Beranda
+</a>
 
-<h1>
+<a href="materi.html">
+Materi
+</a>
+
+<a href="games.html" class="active">
+Game Center
+</a>
+
+<a href="quiz.html">
+Quiz
+</a>
+
+<a href="aktivitas.html">
+Aktivitas
+</a>
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<section class="quote">
+
+<h2>
 ⚔️ Stickman Battle Quiz
-</h1>
+</h2>
+
 
 <p>
-Pilih tantangan Sosiologi yang ingin dimainkan
+Pilih tantangan Sosiologi yang ingin dimainkan.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- LEVEL -->
+
+
+<section class="feature-section">
+
+
+<div class="section-header">
+
+<h2>
+Pilih Level Pertarungan
+</h2>
+
+<p>
+Kalahkan lawan dengan kemampuan Sosiologimu.
 </p>
 
 </div>
 
 
 
-<div class="grid">
+
+
+<div class="feature-grid">
 
 
 
-<!-- MATERI 1 -->
 
-<div class="card">
 
-<h2>
-📘 Level 1
-</h2>
+<!-- LEVEL 1 -->
+
+<div class="feature">
+
+
+<div class="icon blue">
+⚔️
+</div>
+
+
+<h3>
+Level 1
+</h3>
 
 
 <h3>
@@ -186,9 +149,12 @@ Materi:
 </p>
 
 
-<a class="button" href="https://kesenjanganekonomi.my.canva.site/masalahsosial-chap-1" target="_blank">
 
-🚀 MAIN SEKARANG
+<a href="https://kesenjanganekonomi.my.canva.site/masalahsosial-chap-1"
+target="_blank"
+class="btn-primary">
+
+🚀 Main Sekarang
 
 </a>
 
@@ -198,76 +164,100 @@ Materi:
 
 
 
-<!-- MATERI 2 -->
 
-<div class="card">
 
-<h2>
-📗 Level 2
-</h2>
+
+
+<!-- LEVEL 2 -->
+
+<div class="feature">
+
+
+<div class="icon green">
+🔒
+</div>
 
 
 <h3>
-COMING SOON
+Level 2
 </h3>
 
 
 <p>
-
 Materi dan game belum tersedia.
-
 </p>
 
 
-<div class="button coming">
+<button class="btn-outline">
 
-🔒 SEGERA HADIR
+Coming Soon
+
+</button>
+
 
 </div>
 
 
+
+
+
+
+
+
+<!-- LEVEL 3 -->
+
+<div class="feature">
+
+
+<div class="icon orange">
+🔒
 </div>
-
-
-
-
-
-<!-- MATERI 3 -->
-
-<div class="card">
-
-<h2>
-📙 Level 3
-</h2>
 
 
 <h3>
-COMING SOON
+Level 3
 </h3>
 
 
 <p>
-
 Materi dan game sedang disiapkan.
-
 </p>
 
 
-<div class="button coming">
+<button class="btn-outline">
 
-🔒 SEGERA HADIR
+Coming Soon
 
-</div>
-
-
-</div>
-
+</button>
 
 
 </div>
 
 
+
+
 </div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<h3>
+SOSIOZONE
+</h3>
+
+<p>
+Digital Learning Platform Sosiologi
+</p>
+
+</footer>
+
 
 
 </body>
