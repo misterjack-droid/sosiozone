@@ -1,22 +1,15 @@
-/* ===================================
-   SOSIOZONE V2
-   PROTOTYPE HOME CSS
-=================================== */
+/* =====================================
+   SOSIOZONE HOME V2
+   PROTOTYPE CSS
+===================================== */
 
 
-/* ===================================
-   RESET
-=================================== */
+/* RESET */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-
-html{
-    scroll-behavior:smooth;
 }
 
 
@@ -27,30 +20,25 @@ body{
     Arial,
     sans-serif;
 
-    background:#f5f9ff;
+    background:#f8fbff;
 
-    color:#1e293b;
-
-    line-height:1.6;
+    color:#172033;
 
 }
 
 
 a{
-
     text-decoration:none;
-
     color:inherit;
-
 }
 
 
 
 
 
-/* ===================================
+/* =====================================
    NAVBAR
-=================================== */
+===================================== */
 
 
 .navbar{
@@ -63,16 +51,15 @@ a{
 
     top:0;
 
-    z-index:100;
+    z-index:50;
 
-    box-shadow:
-    0 5px 20px rgba(0,0,0,.05);
+    border-bottom:1px solid #e5edf7;
 
 }
 
 
 
-.nav-wrapper{
+.nav-container{
 
     max-width:1200px;
 
@@ -96,6 +83,8 @@ a{
 
     font-weight:800;
 
+    letter-spacing:.5px;
+
     color:#2563eb;
 
 }
@@ -104,7 +93,7 @@ a{
 
 .logo span{
 
-    color:#0f172a;
+    color:#111827;
 
 }
 
@@ -116,7 +105,7 @@ nav{
 
     display:flex;
 
-    gap:30px;
+    gap:32px;
 
 }
 
@@ -126,7 +115,7 @@ nav a{
 
     font-weight:600;
 
-    color:#475569;
+    color:#64748b;
 
     transition:.3s;
 
@@ -134,7 +123,8 @@ nav a{
 
 
 
-nav a:hover{
+nav a:hover,
+nav .active{
 
     color:#2563eb;
 
@@ -146,9 +136,9 @@ nav a:hover{
 
 
 
-/* ===================================
+/* =====================================
    HERO
-=================================== */
+===================================== */
 
 
 .hero{
@@ -157,7 +147,9 @@ nav a:hover{
 
     margin:auto;
 
-    padding:80px 40px;
+    min-height:650px;
+
+    padding:70px 40px;
 
     display:grid;
 
@@ -167,7 +159,7 @@ nav a:hover{
 
     align-items:center;
 
-    gap:50px;
+    gap:40px;
 
 }
 
@@ -175,13 +167,37 @@ nav a:hover{
 
 
 
-.hero-text h1{
+.badge{
 
-    font-size:55px;
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    background:#e0f2fe;
+
+    color:#0369a1;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+.hero-left h1{
+
+    font-size:58px;
 
     line-height:1.15;
 
-    font-weight:800;
+    font-weight:850;
 
     color:#0f172a;
 
@@ -189,7 +205,7 @@ nav a:hover{
 
 
 
-.hero-text h1 span{
+.hero-left h1 span{
 
     color:#2563eb;
 
@@ -199,11 +215,11 @@ nav a:hover{
 
 
 
-.hero-text p{
+.hero-left p{
 
     margin-top:25px;
 
-    max-width:500px;
+    max-width:520px;
 
     font-size:18px;
 
@@ -215,13 +231,13 @@ nav a:hover{
 
 
 
-.hero-button{
+.hero-btn{
 
     margin-top:35px;
 
     display:flex;
 
-    gap:20px;
+    gap:18px;
 
 }
 
@@ -229,50 +245,43 @@ nav a:hover{
 
 
 
-.btn{
+button{
 
-    padding:14px 30px;
+    border:none;
 
-    border-radius:50px;
-
-    font-weight:700;
+    font-size:16px;
 
     cursor:pointer;
 
-    transition:.3s;
+    font-weight:700;
 
 }
 
 
 
+.btn-primary{
 
-
-.primary{
+    padding:15px 32px;
 
     background:#2563eb;
 
     color:white;
 
-}
-
-
-
-.primary:hover{
-
-    transform:translateY(-3px);
-
-    box-shadow:
-    0 10px 25px rgba(37,99,235,.3);
+    border-radius:50px;
 
 }
 
 
 
+.btn-outline{
 
+    padding:13px 30px;
 
-.secondary{
+    border-radius:50px;
 
     border:2px solid #2563eb;
+
+    background:white;
 
     color:#2563eb;
 
@@ -280,11 +289,12 @@ nav a:hover{
 
 
 
-.secondary:hover{
 
-    background:#2563eb;
 
-    color:white;
+.btn-primary:hover,
+.btn-outline:hover{
+
+    transform:translateY(-3px);
 
 }
 
@@ -294,12 +304,14 @@ nav a:hover{
 
 
 
-/* ===================================
+
+
+/* =====================================
    HERO VISUAL
-=================================== */
+===================================== */
 
 
-.hero-image{
+.hero-right{
 
     display:flex;
 
@@ -311,60 +323,177 @@ nav a:hover{
 
 
 
-.visual-card{
+.student-area{
 
-    width:380px;
+    position:relative;
 
-    height:380px;
+    width:420px;
 
-    border-radius:40px;
+    height:420px;
 
-    background:
+}
 
-    linear-gradient(
-    135deg,
-    #2563eb,
-    #38bdf8
-    );
+
+
+
+
+.student-box{
+
+    width:300px;
+
+    height:330px;
+
+    background:white;
+
+    position:absolute;
+
+    top:45px;
+
+    left:60px;
+
+    border-radius:35px;
+
+    box-shadow:
+
+    0 25px 60px rgba(37,99,235,.15);
 
 
     display:flex;
 
     flex-direction:column;
 
-    justify-content:center;
-
     align-items:center;
 
-
-    color:white;
-
-
-    box-shadow:
-
-    0 25px 50px rgba(37,99,235,.25);
+    justify-content:center;
 
 }
 
 
 
-.visual-card h2{
 
-    font-size:40px;
 
-    letter-spacing:2px;
+.circle{
+
+    width:100px;
+
+    height:100px;
+
+    border-radius:50%;
+
+    background:#bfdbfe;
+
+    margin-bottom:20px;
 
 }
 
 
 
-.visual-card p{
+
+
+.person{
+
+    position:absolute;
+
+    width:55px;
+
+    height:80px;
+
+    background:#2563eb;
+
+    border-radius:30px;
+
+    top:125px;
+
+}
+
+
+
+
+
+.student-box h3{
+
+    margin-top:80px;
+
+    font-size:25px;
+
+    color:#2563eb;
+
+}
+
+
+
+
+
+.student-box p{
+
+    color:#64748b;
+
+}
+
+
+
+
+
+
+
+/* FLOATING CARD */
+
+
+.floating-card{
+
+    position:absolute;
+
+    background:white;
+
+    padding:18px;
+
+    width:90px;
 
     text-align:center;
 
-    margin-top:15px;
+    border-radius:20px;
 
-    opacity:.9;
+    font-weight:700;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.1);
+
+}
+
+
+
+
+
+.card-one{
+
+    top:40px;
+
+    left:0;
+
+}
+
+
+
+
+
+.card-two{
+
+    right:0;
+
+    top:150px;
+
+}
+
+
+
+
+
+.card-three{
+
+    bottom:40px;
+
+    left:40px;
 
 }
 
@@ -374,26 +503,25 @@ nav a:hover{
 
 
 
-/* ===================================
-   STATISTIK
-=================================== */
+
+/* =====================================
+   DASHBOARD
+===================================== */
 
 
-.stats{
+.dashboard{
 
     max-width:1200px;
 
-    margin:30px auto 80px;
+    margin:auto;
 
-    padding:0 40px;
-
+    padding:20px 40px 80px;
 
     display:grid;
 
     grid-template-columns:
 
     repeat(4,1fr);
-
 
     gap:25px;
 
@@ -403,43 +531,27 @@ nav a:hover{
 
 
 
-.stat-box{
+.dashboard-card{
 
     background:white;
 
-    padding:35px 20px;
+    padding:30px;
 
     border-radius:25px;
 
     text-align:center;
 
-
     box-shadow:
 
-    0 10px 30px rgba(0,0,0,.06);
-
-
-    transition:.3s;
+    0 10px 30px rgba(15,23,42,.06);
 
 }
 
 
 
+.dashboard-card h2{
 
-
-.stat-box:hover{
-
-    transform:translateY(-8px);
-
-}
-
-
-
-
-
-.stat-box h2{
-
-    font-size:40px;
+    font-size:42px;
 
     color:#2563eb;
 
@@ -447,7 +559,7 @@ nav a:hover{
 
 
 
-.stat-box p{
+.dashboard-card p{
 
     color:#64748b;
 
@@ -461,18 +573,19 @@ nav a:hover{
 
 
 
-/* ===================================
-   FEATURES
-=================================== */
+
+/* =====================================
+   FEATURE
+===================================== */
 
 
-.features{
+.feature-section{
 
     max-width:1200px;
 
     margin:auto;
 
-    padding:50px 40px 100px;
+    padding:60px 40px 100px;
 
 }
 
@@ -480,7 +593,7 @@ nav a:hover{
 
 
 
-.title{
+.section-header{
 
     text-align:center;
 
@@ -492,7 +605,7 @@ nav a:hover{
 
 
 
-.title h2{
+.section-header h2{
 
     font-size:38px;
 
@@ -502,7 +615,9 @@ nav a:hover{
 
 
 
-.title p{
+
+
+.section-header p{
 
     color:#64748b;
 
@@ -514,14 +629,13 @@ nav a:hover{
 
 
 
-.feature-container{
+.feature-grid{
 
     display:grid;
 
     grid-template-columns:
 
     repeat(4,1fr);
-
 
     gap:25px;
 
@@ -531,21 +645,17 @@ nav a:hover{
 
 
 
-
-
-.card{
+.feature{
 
     background:white;
 
-    padding:35px 25px;
+    padding:30px;
 
     border-radius:25px;
 
-
     box-shadow:
 
-    0 10px 30px rgba(0,0,0,.06);
-
+    0 15px 35px rgba(15,23,42,.06);
 
     transition:.3s;
 
@@ -554,11 +664,10 @@ nav a:hover{
 
 
 
-.card:hover{
 
-    transform:
+.feature:hover{
 
-    translateY(-10px);
+    transform:translateY(-8px);
 
 }
 
@@ -566,9 +675,21 @@ nav a:hover{
 
 
 
-.card-icon{
+.icon{
 
-    font-size:45px;
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
 
     margin-bottom:20px;
 
@@ -576,13 +697,33 @@ nav a:hover{
 
 
 
+.blue{
+
+    background:#dbeafe;
+
+}
 
 
-.card h3{
 
-    margin-bottom:15px;
+.green{
 
-    color:#0f172a;
+    background:#dcfce7;
+
+}
+
+
+
+.orange{
+
+    background:#ffedd5;
+
+}
+
+
+
+.purple{
+
+    background:#f3e8ff;
 
 }
 
@@ -590,7 +731,15 @@ nav a:hover{
 
 
 
-.card p{
+.feature h3{
+
+    margin-bottom:12px;
+
+}
+
+
+
+.feature p{
 
     color:#64748b;
 
@@ -602,27 +751,26 @@ nav a:hover{
 
 
 
-/* ===================================
+/* =====================================
    QUOTE
-=================================== */
+===================================== */
 
 
 .quote{
+
+    padding:90px 30px;
 
     background:
 
     linear-gradient(
     135deg,
     #2563eb,
-    #1d4ed8
+    #38bdf8
     );
 
+    text-align:center;
 
     color:white;
-
-    padding:80px 40px;
-
-    text-align:center;
 
 }
 
@@ -634,13 +782,11 @@ nav a:hover{
 
     margin:auto;
 
-    font-size:36px;
+    font-size:38px;
 
     line-height:1.4;
 
 }
-
-
 
 
 
@@ -658,9 +804,10 @@ nav a:hover{
 
 
 
-/* ===================================
+
+/* =====================================
    FOOTER
-=================================== */
+===================================== */
 
 
 footer{
@@ -671,23 +818,19 @@ footer{
 
     text-align:center;
 
-    padding:40px;
+    padding:45px;
 
 }
-
-
 
 
 
 footer h3{
 
-    font-size:28px;
+    font-size:30px;
 
     margin-bottom:10px;
 
 }
-
-
 
 
 
@@ -703,20 +846,19 @@ footer p{
 
 
 
-/* ===================================
-   RESPONSIVE TABLET
-=================================== */
+/* =====================================
+   TABLET
+===================================== */
 
 
 @media(max-width:900px){
 
 
-.nav-wrapper{
+.nav-container{
 
     padding:20px;
 
 }
-
 
 
 nav{
@@ -724,7 +866,6 @@ nav{
     display:none;
 
 }
-
 
 
 .hero{
@@ -736,24 +877,31 @@ nav{
 }
 
 
-
-.hero-text p{
+.hero-left p{
 
     margin:auto;
 
 }
 
 
-
-.hero-button{
+.hero-btn{
 
     justify-content:center;
 
 }
 
 
+.dashboard{
 
-.stats{
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+}
+
+
+
+.feature-grid{
 
     grid-template-columns:
 
@@ -763,15 +911,6 @@ nav{
 
 
 
-.feature-container{
-
-    grid-template-columns:
-
-    repeat(2,1fr);
-
-}
-
-
 }
 
 
@@ -780,68 +919,16 @@ nav{
 
 
 
-/* ===================================
-   RESPONSIVE MOBILE
-=================================== */
+
+/* =====================================
+   MOBILE
+===================================== */
 
 
 @media(max-width:600px){
 
 
-
-.logo{
-
-    font-size:23px;
-
-}
-
-
-
 .hero{
-
-    padding:50px 20px;
-
-}
-
-
-
-.hero-text h1{
-
-    font-size:38px;
-
-}
-
-
-
-.visual-card{
-
-    width:280px;
-
-    height:280px;
-
-}
-
-
-
-.visual-card h2{
-
-    font-size:30px;
-
-}
-
-
-
-.stats{
-
-    padding:0 20px;
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.features{
 
     padding:40px 20px;
 
@@ -849,15 +936,41 @@ nav{
 
 
 
-.title h2{
+.hero-left h1{
 
-    font-size:30px;
+    font-size:38px;
 
 }
 
 
 
-.feature-container{
+.student-area{
+
+    transform:scale(.75);
+
+}
+
+
+
+.dashboard{
+
+    grid-template-columns:1fr;
+
+    padding:20px;
+
+}
+
+
+
+.feature-section{
+
+    padding:40px 20px;
+
+}
+
+
+
+.feature-grid{
 
     grid-template-columns:1fr;
 
@@ -865,9 +978,9 @@ nav{
 
 
 
-.quote{
+.section-header h2{
 
-    padding:60px 20px;
+    font-size:30px;
 
 }
 
